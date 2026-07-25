@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.0.17
+  version: "0.1.2"
 
 package:
   name: mutt-language-server
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/mutt-language-server/mutt_language_server-${{ version }}.tar.gz
-  sha256: d8d2fe5df4807b7323745532799cafe8298b06c6312476fa932d822a65ac19ed
+  sha256: 632b97f9faf686f6a35b25086c5a530c2d93ed09305cfb904b85f165ec7d5d9d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
